@@ -1,0 +1,532 @@
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Se le da un valor a html5 para renderizar el espacio: */
+	display:block;
+}
+
+body{
+	/* se dispone el color de fondo, de texto: */
+	font-size:15px;
+	color:#050909;
+	background-color:#E9F6F6;
+}
+
+/* Hyperlink estilo: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* titulos: */
+/* ver las unidades de medida relativas y absolutas en px y em // ver en : https://librosweb.es/libro/css/capitulo-3/unidades-de-medida.html*/
+
+h1,h2,h3{
+	font-size:15px;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+/* DIBUJAMOS UNA LINEA DIVISORA*/
+.linea{
+	/* La linea divisora: */
+	height:10px;
+	background-color:#24404c;
+	border-bottom:2px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .linea{
+	/* CAMBIA DE COLOR LA LINEA: */
+	background-color:#9FEA55;
+	border-bottom-color:#55EA99;
+	margin:1.3em 0;
+	height:15px;
+}
+
+footer .linea{
+	margin:2em 0;
+}
+/* comienzo con nav (menú)*/
+
+nav{
+	
+	padding:20px 0px 0px 0px;
+	float:right;
+	right:20px;
+	top:0em;
+	
+
+}
+
+
+/* RESET: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*  nav estilo DE CADA BOTÓN: */
+
+nav ul li{
+	display:inline;
+	
+
+}
+nav ul li a{
+	background-color: #F7F71C;
+}
+nav ul li a,
+nav ul li a:visited{
+	color:#ffff;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#FFFF00;
+}
+
+nav, article, nav ul li a,figure, div{
+	/*  CSS3 esquinas redondeadas: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:20px;
+}
+
+/* estilos arti: */
+
+#pagina{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	
+}
+
+article{
+    font-family: 'Roboto', sans-serif;
+	background-color:#FAFAF1;
+	margin:3em 0;
+	padding:20px;	
+    border-style: solid;
+	border-radius: 10px;
+	border-color: pink;
+	border-width: 10px;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+figure img{
+	/*object-fit: sirve para escalar la imagen dentro del div*/
+	margin-left:-60px;
+	/*object-fit: cover;*/
+	object-fit: contain;
+	/*object-fit: fill;*/
+	/*object-fit: scale-down;*/
+}
+
+/* Footer estilos: */
+
+footer{
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#FAFAF1;
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+    border-style: solid;
+	border-radius: 10px;
+	border-color: pink;
+	border-width: 10px;
+}
+
+
+footer p{
+
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.por{
+	float:left;
+
+}
+
+footer a.arriba{
+	float:right;
+}
+/* Popup nuevo */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size:18px;
+	color:green;
+	background-color:#E7E7BA;
+	font-family:Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+@media screen and (min-width: 641px){
+
+
+
+@media screen and (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  html{
+    font-size: 55%;
+  }
+}
+    
+/* CUSTOM */
+header{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#FAFAF1;
+    margin-bottom: 45px;
+    font-family: 'Anton', sans-serif;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: pink;
+	border-width: 10px;
+}
+.footer_izq{  
+    float:left;
+}
+.footer_der{  
+    float:right;
+}
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow2-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text2 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev2, .next2,.text2 {font-size: 11px}
+}
