@@ -10,7 +10,7 @@ body{
 	/* se dispone el color de fondo, de texto: */
 	font-size:15px;
 	color:#050909;
-	background-color:#E9F6F6;
+	background-color:#F8F9F9;
 }
 
 /* Hyperlink estilo: */
@@ -75,8 +75,8 @@ p{
 
 article .linea{
 	/* CAMBIA DE COLOR LA LINEA: */
-	background-color:#9FEA55;
-	border-bottom-color:#55EA99;
+	background-color:#D7BDE2;
+	border-bottom-color:#D7BDE2;
 	margin:1.3em 0;
 	height:15px;
 }
@@ -115,7 +115,7 @@ nav ul li{
 
 }
 nav ul li a{
-	background-color: #F7F71C;
+	background-color: #A569BD;
 }
 nav ul li a,
 nav ul li a:visited{
@@ -132,7 +132,7 @@ nav ul li a:visited{
 
 nav ul li a:hover{
 	text-decoration:none;
-	background-color:#FFFF00;
+	background-color:#D7BDE2;
 }
 
 nav, article, nav ul li a,figure, div{
@@ -153,12 +153,12 @@ nav, article, nav ul li a,figure, div{
 
 article{
     font-family: 'Roboto', sans-serif;
-	background-color:#FAFAF1;
+	background-color:#F8F9F9;
 	margin:3em 0;
 	padding:20px;	
     border-style: solid;
 	border-radius: 10px;
-	border-color: pink;
+	border-color: #D7BDE2;
 	border-width: 10px;
 }
 
@@ -193,13 +193,13 @@ footer{
     font-family: 'Roboto', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:#FAFAF1;
+    background-color:#E8DAEF;
 	margin-bottom:30px;
 	text-align:center;
 	font-size:0.825em;
     border-style: solid;
 	border-radius: 10px;
-	border-color: pink;
+	border-color: #D7BDE2;
 	border-width: 10px;
 }
 
@@ -315,12 +315,12 @@ footer a.arriba{
 header{
     padding-left: 20px;
     padding-right: 20px;
-    background-color:#FAFAF1;
+    background-color:#E8DAEF;
     margin-bottom: 45px;
     font-family: 'Anton', sans-serif;
 	border-style: solid;
 	border-radius: 10px;
-	border-color: pink;
+	border-color: #D7BDE2;
 	border-width: 10px;
 }
 .footer_izq{  
